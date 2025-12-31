@@ -1,0 +1,94 @@
+ninja: Entering directory `build-kraken'
+[1/64] Linking target src/kraken
+FAILED: src/kraken 
+cc  -o src/kraken src/kraken.p/meson-generated_.._kraken-freedesktop-generated.c.o src/kraken.p/meson-generated_.._kraken-cinnamon-dbus.c.o src/kraken.p/kraken-action-config-widget.c.o src/kraken.p/kraken-application.c.o src/kraken.p/kraken-blank-desktop-window.c.o src/kraken.p/kraken-bookmark-list.c.o src/kraken.p/kraken-bookmarks-window.c.o src/kraken.p/kraken-config-base-widget.c.o src/kraken.p/kraken-connect-server-dialog-nonmain.c.o src/kraken.p/kraken-connect-server-dialog.c.o src/kraken.p/kraken-connect-server-operation.c.o src/kraken.p/kraken-desktop-icon-grid-view.c.o src/kraken.p/kraken-desktop-item-properties.c.o src/kraken.p/kraken-desktop-manager.c.o src/kraken.p/kraken-desktop-overlay.c.o src/kraken.p/kraken-desktop-window.c.o src/kraken.p/kraken-error-reporting.c.o src/kraken.p/kraken-extension-config-widget.c.o src/kraken.p/kraken-file-management-properties.c.o src/kraken.p/kraken-floating-bar.c.o src/kraken.p/kraken-freedesktop-dbus.c.o src/kraken.p/kraken-icon-view-container.c.o src/kraken.p/kraken-icon-view-grid-container.c.o src/kraken.p/kraken-icon-view.c.o src/kraken.p/kraken-image-properties-page.c.o src/kraken.p/kraken-interesting-folder-bar.c.o src/kraken.p/kraken-list-model.c.o src/kraken.p/kraken-list-view.c.o src/kraken.p/kraken-location-bar.c.o src/kraken.p/kraken-location-entry.c.o src/kraken.p/kraken-mime-actions.c.o src/kraken.p/kraken-navigation-action.c.o src/kraken.p/kraken-navigation-state.c.o src/kraken.p/kraken-notebook.c.o src/kraken.p/kraken-pathbar.c.o src/kraken.p/kraken-places-sidebar.c.o src/kraken.p/kraken-plugin-manager.c.o src/kraken.p/kraken-previewer.c.o src/kraken.p/kraken-progress-info-widget.c.o src/kraken.p/kraken-progress-ui-handler.c.o src/kraken.p/kraken-properties-window.c.o src/kraken.p/kraken-query-editor.c.o src/kraken.p/kraken-template-config-widget.c.o src/kraken.p/kraken-self-check-functions.c.o src/kraken.p/kraken-statusbar.c.o src/kraken.p/kraken-thumbnail-problem-bar.c.o src/kraken.p/kraken-toolbar.c.o src/kraken.p/kraken-trash-bar.c.o src/kraken.p/kraken-tree-sidebar-model.c.o src/kraken.p/kraken-tree-sidebar.c.o src/kraken.p/kraken-view-dnd.c.o src/kraken.p/kraken-view-factory.c.o src/kraken.p/kraken-view.c.o src/kraken.p/kraken-window-bookmarks.c.o src/kraken.p/kraken-window-manage-views.c.o src/kraken.p/kraken-window-menus.c.o src/kraken.p/kraken-window-pane.c.o src/kraken.p/kraken-window-slot-dnd.c.o src/kraken.p/kraken-window-slot.c.o src/kraken.p/kraken-window.c.o src/kraken.p/kraken-x-content-bar.c.o src/kraken.p/kraken-main-application.c.o src/kraken.p/kraken-main.c.o -Wl,--as-needed -Wl,--no-undefined '-Wl,-rpath,$ORIGIN/../libkraken-extension' -Wl,-rpath-link,/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/libkraken-extension -Wl,--start-group cut-n-paste-code/libegg/libegg.a libkraken-extension/libkraken-extension.so.1.4.0 libkraken-private/libkraken-private.a eel/libeel.a /usr/lib/x86_64-linux-gnu/libcinnamon-desktop.so /usr/lib/x86_64-linux-gnu/libgtk-3.so /usr/lib/x86_64-linux-gnu/libgdk-3.so /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so /usr/lib/x86_64-linux-gnu/libpango-1.0.so /usr/lib/x86_64-linux-gnu/libharfbuzz.so /usr/lib/x86_64-linux-gnu/libatk-1.0.so /usr/lib/x86_64-linux-gnu/libcairo-gobject.so /usr/lib/x86_64-linux-gnu/libcairo.so /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so /usr/lib/x86_64-linux-gnu/libgio-2.0.so /usr/lib/x86_64-linux-gnu/libgobject-2.0.so /usr/lib/x86_64-linux-gnu/libglib-2.0.so /usr/lib/x86_64-linux-gnu/libgailutil-3.so -lm /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so -pthread /usr/lib/x86_64-linux-gnu/libjson-glib-1.0.so /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libxapp.so /usr/lib/x86_64-linux-gnu/libexif.so /usr/lib/x86_64-linux-gnu/libexempi.so -Wl,--end-group
+/usr/bin/ld: src/kraken.p/kraken-bookmarks-window.c.o: in function `create_bookmarks_window':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-bookmarks-window.c:313:(.text+0x88c): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-bookmarks-window.c:322:(.text+0x932): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: src/kraken.p/kraken-connect-server-dialog.c.o: in function `kraken_connect_server_dialog_init':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:872:(.text+0x26c1): undefined reference to `gtk_label_new_with_mnemonic'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:888:(.text+0x2895): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:892:(.text+0x28c8): undefined reference to `gtk_label_new_with_mnemonic'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:906:(.text+0x2a49): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:910:(.text+0x2a7c): undefined reference to `gtk_label_new_with_mnemonic'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:918:(.text+0x2b96): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:972:(.text+0x2e92): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:980:(.text+0x2f1c): undefined reference to `gtk_label_new_with_mnemonic'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:990:(.text+0x309a): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:995:(.text+0x30de): undefined reference to `gtk_label_new_with_mnemonic'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:999:(.text+0x31a4): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:1009:(.text+0x32f2): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:1037:(.text+0x3596): undefined reference to `gtk_label_new_with_mnemonic'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:1048:(.text+0x3714): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:1052:(.text+0x3758): undefined reference to `gtk_label_new_with_mnemonic'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:1062:(.text+0x38d6): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:1067:(.text+0x391a): undefined reference to `gtk_label_new_with_mnemonic'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:1078:(.text+0x3ac7): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-connect-server-dialog.c:1083:(.text+0x3b0b): undefined reference to `gtk_check_button_new_with_mnemonic'
+/usr/bin/ld: src/kraken.p/kraken-properties-window.c.o: in function `set_name_field':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:604:(.text+0x1069): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: src/kraken.p/kraken-properties-window.c.o: in function `update_name_field':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:652:(.text+0x1236): undefined reference to `gtk_label_set_text_with_mnemonic'
+/usr/bin/ld: src/kraken.p/kraken-properties-window.c.o: in function `attach_label':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:1216:(.text+0x2cd3): undefined reference to `gtk_label_new_with_mnemonic'
+/usr/bin/ld: src/kraken.p/kraken-properties-window.c.o: in function `append_title_value_pair':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:2271:(.text+0x6644): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: src/kraken.p/kraken-properties-window.c.o: in function `append_title_and_ellipsizing_value':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:2293:(.text+0x66e6): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: src/kraken.p/kraken-properties-window.c.o: in function `append_directory_contents_fields':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:2309:(.text+0x6797): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: src/kraken.p/kraken-properties-window.c.o: in function `append_size_field':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:2332:(.text+0x68e1): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: src/kraken.p/kraken-properties-window.c.o: in function `add_permissions_checkbox_with_label':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:3624:(.text+0x9ef7): undefined reference to `gtk_check_button_new_with_mnemonic'
+/usr/bin/ld: src/kraken.p/kraken-properties-window.c.o: in function `add_permissions_combo_box':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:4060:(.text+0xc2c6): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: src/kraken.p/kraken-properties-window.c.o: in function `append_special_execution_checkbox':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:4077:(.text+0xc359): undefined reference to `gtk_check_button_new_with_mnemonic'
+/usr/bin/ld: src/kraken.p/kraken-properties-window.c.o: in function `create_simple_permissions':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:4188:(.text+0xc768): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:4198:(.text+0xc7f2): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:4218:(.text+0xc925): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:4229:(.text+0xc9af): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: src/kraken.p/kraken-properties-window.c.o: in function `create_advanced_permissions':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:4380:(.text+0xcef6): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: src/kraken.p/kraken-properties-window.c.o:/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:4393: more undefined references to `gtk_label_set_mnemonic_widget' follow
+/usr/bin/ld: src/kraken.p/kraken-properties-window.c.o: in function `create_permissions_page':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-properties-window.c:4623:(.text+0xd91b): undefined reference to `gtk_button_new_with_mnemonic'
+/usr/bin/ld: src/kraken.p/kraken-view.c.o: in function `select_pattern':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-view.c:1766:(.text+0x3a9a): undefined reference to `gtk_label_new_with_mnemonic'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-view.c:1795:(.text+0x3c96): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: src/kraken.p/kraken-view.c.o: in function `action_connect_to_server_link_callback':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-view.c:8004:(.text+0x13c35): undefined reference to `gtk_label_new_with_mnemonic'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-view.c:8019:(.text+0x13d1d): undefined reference to `gtk_label_set_mnemonic_widget'
+/usr/bin/ld: src/kraken.p/kraken-window-pane.c.o: in function `notebook_popup_menu_show':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-window-pane.c:520:(.text+0x1198): undefined reference to `gtk_menu_item_new_with_mnemonic'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-window-pane.c:537:(.text+0x126b): undefined reference to `gtk_menu_item_new_with_mnemonic'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-window-pane.c:545:(.text+0x12f4): undefined reference to `gtk_menu_item_new_with_mnemonic'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-window-pane.c:556:(.text+0x13a7): undefined reference to `gtk_image_menu_item_new_with_mnemonic'
+/usr/bin/ld: src/kraken.p/kraken-window.c.o: in function `toggle_menubar':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../src/kraken-window.c:1159:(.text+0x2eae): undefined reference to `gtk_window_set_mnemonics_visible'
+/usr/bin/ld: libkraken-private/libkraken-private.a.p/kraken-column-chooser.c.o: in function `button_new_with_mnemonic':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../libkraken-private/kraken-column-chooser.c:353:(.text+0xd2c): undefined reference to `gtk_button_new_with_mnemonic'
+/usr/bin/ld: libkraken-private/libkraken-private.a.p/kraken-column-chooser.c.o: in function `add_buttons':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../libkraken-private/kraken-column-chooser.c:394:(.text+0xfb2): undefined reference to `gtk_button_new_with_mnemonic'
+/usr/bin/ld: libkraken-private/libkraken-private.a.p/kraken-dnd.c.o: in function `append_drop_action_menu_item':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../libkraken-private/kraken-dnd.c:852:(.text+0x18a4): undefined reference to `gtk_menu_item_new_with_mnemonic'
+/usr/bin/ld: libkraken-private/libkraken-private.a.p/kraken-dnd.c.o: in function `kraken_drag_drop_action_ask':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../libkraken-private/kraken-dnd.c:899:(.text+0x1a99): undefined reference to `gtk_menu_item_new_with_mnemonic'
+/usr/bin/ld: libkraken-private/libkraken-private.a.p/kraken-file-conflict-dialog.c.o: in function `kraken_file_conflict_dialog_init':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../libkraken-private/kraken-file-conflict-dialog.c:521:(.text+0x1c2e): undefined reference to `gtk_expander_new_with_mnemonic'
+/usr/bin/ld: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../libkraken-private/kraken-file-conflict-dialog.c:547:(.text+0x1e3d): undefined reference to `gtk_check_button_new_with_mnemonic'
+/usr/bin/ld: eel/libeel.a.p/eel-gtk-extensions.c.o: in function `eel_gtk_message_dialog_set_details_label':
+/home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/../eel/eel-gtk-extensions.c:358:(.text+0xab4): undefined reference to `gtk_expander_new_with_mnemonic'
+collect2: error: ld returned 1 exit status
+[2/64] Compiling C object src/kraken-desktop.p/kraken-interesting-folder-bar.c.o
+[3/64] Compiling C object src/kraken-desktop.p/kraken-navigation-action.c.o
+[4/64] Compiling C object src/kraken-desktop.p/kraken-location-bar.c.o
+[5/64] Compiling C object src/kraken-desktop.p/kraken-location-entry.c.o
+[6/64] Compiling C object src/kraken-desktop.p/kraken-image-properties-page.c.o
+[7/64] Compiling C object src/kraken-desktop.p/kraken-list-model.c.o
+[8/64] Compiling C object src/kraken-desktop.p/kraken-mime-actions.c.o
+[9/64] Compiling C object src/kraken-desktop.p/kraken-list-view.c.o
+[10/64] Compiling C object src/kraken-desktop.p/kraken-icon-view.c.o
+ninja: build stopped: subcommand failed.

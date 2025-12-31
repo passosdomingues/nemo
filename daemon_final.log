@@ -1,0 +1,18 @@
+Kraken Daemon: Database initialized at /home/rafael/.kraken/events.db
+Kraken Daemon: Monitoring directory /home/rafael/KrakenDrive/data
+Kraken Daemon: Submerging into the file system abysm...
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CREATED on /home/rafael/KrakenDrive/data/vector_done.txt
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/1767130173630546
+Create a readonly snapshot of '/home/rafael/KrakenDrive/data' in '/home/rafael/KrakenDrive/snapshots/1767130173630546'
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/1767130173630546
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGED on /home/rafael/KrakenDrive/data/vector_done.txt
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGES_DONE_HINT on /home/rafael/KrakenDrive/data/vector_done.txt
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/1767130174758791
+Create a readonly snapshot of '/home/rafael/KrakenDrive/data' in '/home/rafael/KrakenDrive/snapshots/1767130174758791'
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/1767130174758791
+Kraken Daemon: Clean Summary: A definite vector test is a type of statistical test that is used to determine if two variables are independent.
+Kraken Daemon: Triggering embedding for /home/rafael/KrakenDrive/data/vector_done.txt
+Kraken Daemon: Embedding failed: Invalid self
+Kraken Daemon: Clean Summary: A definitive vector test is a test that determines the absolute position of the vector in the direction of its direction. It's a test that allows us to confirm that a given vector is indeed in the direction of its direction.
+Kraken Daemon: Triggering embedding for /home/rafael/KrakenDrive/data/vector_done.txt
+Kraken Daemon: Embedding failed: Invalid self

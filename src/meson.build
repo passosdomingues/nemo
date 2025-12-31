@@ -1,169 +1,171 @@
 dbusBuiltSources = gnome.gdbus_codegen(
-  'nemo-freedesktop-generated',
+  'kraken-freedesktop-generated',
   join_paths(meson.project_source_root(), 'data', 'freedesktop-dbus-interfaces.xml'),
   interface_prefix: 'org.freedesktop.',
-  namespace: 'NemoFreedesktop',
+  namespace: 'KrakenFreedesktop',
   object_manager: true
 )
 
-nemoBuiltSources = gnome.gdbus_codegen(
-  'nemo-cinnamon-dbus',
+krakenBuiltSources = gnome.gdbus_codegen(
+  'kraken-cinnamon-dbus',
   join_paths(meson.project_source_root(), 'data', 'org.Cinnamon.xml'),
   interface_prefix: 'org.',
-  namespace: 'Nemo',
+  namespace: 'Kraken',
   object_manager: true
 )
 
-nemoCommon_sources = [
+krakenCommon_sources = [
   dbusBuiltSources,
-  nemoBuiltSources,
-  'nemo-action-config-widget.c',
-  'nemo-application.c',
-  'nemo-blank-desktop-window.c',
-  'nemo-bookmark-list.c',
-  'nemo-bookmarks-window.c',
-  'nemo-config-base-widget.c',
-  'nemo-connect-server-dialog-nonmain.c',
-  'nemo-connect-server-dialog.c',
-  'nemo-connect-server-operation.c',
-  'nemo-desktop-icon-grid-view.c',
-  'nemo-desktop-item-properties.c',
-  'nemo-desktop-manager.c',
-  'nemo-desktop-overlay.c',
-  'nemo-desktop-window.c',
-  'nemo-error-reporting.c',
-  'nemo-extension-config-widget.c',
-  'nemo-file-management-properties.c',
-  'nemo-floating-bar.c',
-  'nemo-freedesktop-dbus.c',
-  'nemo-icon-view-container.c',
-  'nemo-icon-view-grid-container.c',
-  'nemo-icon-view.c',
-  'nemo-image-properties-page.c',
-  'nemo-interesting-folder-bar.c',
-  'nemo-list-model.c',
-  'nemo-list-view.c',
-  'nemo-location-bar.c',
-  'nemo-location-entry.c',
-  'nemo-mime-actions.c',
-  'nemo-navigation-action.c',
-  'nemo-navigation-state.c',
-  'nemo-notebook.c',
-  'nemo-pathbar.c',
-  'nemo-places-sidebar.c',
-  'nemo-plugin-manager.c',
-  'nemo-previewer.c',
-  'nemo-progress-info-widget.c',
-  'nemo-progress-ui-handler.c',
-  'nemo-properties-window.c',
-  'nemo-query-editor.c',
-  'nemo-template-config-widget.c',
-  'nemo-self-check-functions.c',
-  'nemo-statusbar.c',
-  'nemo-thumbnail-problem-bar.c',
-  'nemo-toolbar.c',
-  'nemo-trash-bar.c',
-  'nemo-tree-sidebar-model.c',
-  'nemo-tree-sidebar.c',
-  'nemo-view-dnd.c',
-  'nemo-view-factory.c',
-  'nemo-view.c',
-  'nemo-window-bookmarks.c',
-  'nemo-window-manage-views.c',
-  'nemo-window-menus.c',
-  'nemo-window-pane.c',
-  'nemo-window-slot-dnd.c',
-  'nemo-window-slot.c',
-  'nemo-window.c',
-  'nemo-x-content-bar.c',
+  krakenBuiltSources,
+  'kraken-action-config-widget.c',
+  'kraken-application.c',
+  'kraken-blank-desktop-window.c',
+  'kraken-bookmark-list.c',
+  'kraken-bookmarks-window.c',
+  'kraken-config-base-widget.c',
+  'kraken-connect-server-dialog-nonmain.c',
+  'kraken-connect-server-dialog.c',
+  'kraken-connect-server-operation.c',
+  'kraken-desktop-icon-grid-view.c',
+  'kraken-desktop-item-properties.c',
+  'kraken-desktop-manager.c',
+  'kraken-desktop-overlay.c',
+  'kraken-desktop-window.c',
+  'kraken-error-reporting.c',
+  'kraken-extension-config-widget.c',
+  'kraken-file-management-properties.c',
+  'kraken-floating-bar.c',
+  'kraken-freedesktop-dbus.c',
+  'kraken-icon-view-container.c',
+  'kraken-icon-view-grid-container.c',
+  'kraken-icon-view.c',
+  'kraken-image-properties-page.c',
+  'kraken-interesting-folder-bar.c',
+  'kraken-list-model.c',
+  'kraken-list-view.c',
+  'kraken-location-bar.c',
+  'kraken-location-entry.c',
+  'kraken-mime-actions.c',
+  'kraken-navigation-action.c',
+  'kraken-navigation-state.c',
+  'kraken-notebook.c',
+  'kraken-pathbar.c',
+  'kraken-places-sidebar.c',
+  'kraken-plugin-manager.c',
+  'kraken-previewer.c',
+  'kraken-progress-info-widget.c',
+  'kraken-progress-ui-handler.c',
+  'kraken-properties-window.c',
+  'kraken-query-editor.c',
+  'kraken-template-config-widget.c',
+  'kraken-self-check-functions.c',
+  'kraken-statusbar.c',
+  'kraken-thumbnail-problem-bar.c',
+  'kraken-toolbar.c',
+  'kraken-trash-bar.c',
+  'kraken-tree-sidebar-model.c',
+  'kraken-tree-sidebar.c',
+  'kraken-view-dnd.c',
+  'kraken-view-factory.c',
+  'kraken-view.c',
+  'kraken-graph-view.c',
+  'kraken-timeline-view.c',
+  'kraken-window-bookmarks.c',
+  'kraken-window-manage-views.c',
+  'kraken-window-menus.c',
+  'kraken-window-pane.c',
+  'kraken-window-slot-dnd.c',
+  'kraken-window-slot.c',
+  'kraken-window.c',
+  'kraken-x-content-bar.c',
 ]
 
-nemoWindow_sources = [
-  'nemo-main-application.c',
-  'nemo-main.c',
+krakenWindow_sources = [
+  'kraken-main-application.c',
+  'kraken-main.c',
 ]
-nemoWindow_headers = [
-  'nemo-main-application.h',
+krakenWindow_headers = [
+  'kraken-main-application.h',
 ]
 
-nemoDesktop_sources = [
-  'nemo-desktop-application.c',
-  'nemo-desktop-icon-view.c',
-  'nemo-desktop-main.c',
+krakenDesktop_sources = [
+  'kraken-desktop-application.c',
+  'kraken-desktop-icon-view.c',
+  'kraken-desktop-main.c',
 ]
-nemoDesktop_headers = [
-  'nemo-desktop-application.h',
-  'nemo-desktop-overlay.h',
-  'nemo-desktop-icon-view.h',
+krakenDesktop_headers = [
+  'kraken-desktop-application.h',
+  'kraken-desktop-overlay.h',
+  'kraken-desktop-icon-view.h',
 ]
 
 
 if enableEmptyView
-  nemoCommon_sources += 'nemo-empty-view.c'
+  krakenCommon_sources += 'kraken-empty-view.c'
 endif
 
-nemo_deps = [ cinnamon, gail, glib, gtk, math,
-  egg, nemo_extension, nemo_private, xapp ]
+kraken_deps = [ cinnamon, gail, glib, gtk, math,
+  egg, kraken_extension, kraken_private, xapp ]
 
 if exempi_enabled
-  nemo_deps += exempi
+  kraken_deps += exempi
 endif
 
 if libexif_enabled
-  nemo_deps += libexif
+  kraken_deps += libexif
 endif
 
-nemo = executable('nemo',
-  nemoCommon_sources + nemoWindow_sources,
+kraken = executable('kraken',
+  krakenCommon_sources + krakenWindow_sources,
   include_directories: [ rootInclude ],
-  c_args: nemo_definitions,
-  dependencies: nemo_deps,
+  c_args: kraken_definitions,
+  dependencies: kraken_deps,
   install: true
 )
 
-nemoDesktop = executable('nemo-desktop',
-  nemoCommon_sources + nemoDesktop_sources,
+krakenDesktop = executable('kraken-desktop',
+  krakenCommon_sources + krakenDesktop_sources,
   include_directories: [ rootInclude],
-  c_args: nemo_definitions,
-  dependencies: nemo_deps,
+  c_args: kraken_definitions,
+  dependencies: kraken_deps,
   install: true
 )
 
-nemo_autorun_software = executable('nemo-autorun-software',
-  [ 'nemo-autorun-software.c' ],
+kraken_autorun_software = executable('kraken-autorun-software',
+  [ 'kraken-autorun-software.c' ],
   include_directories: [ rootInclude, ],
-  c_args: nemo_definitions,
-  dependencies: nemo_deps,
+  c_args: kraken_definitions,
+  dependencies: kraken_deps,
   install: true
 )
 
-nemo_connect_server = executable('nemo-connect-server',
+kraken_connect_server = executable('kraken-connect-server',
   [
-    'nemo-bookmark-list.c',
-    'nemo-connect-server-dialog.c',
-    'nemo-connect-server-dialog-main.c',
-    'nemo-connect-server-operation.c'
+    'kraken-bookmark-list.c',
+    'kraken-connect-server-dialog.c',
+    'kraken-connect-server-dialog-main.c',
+    'kraken-connect-server-operation.c'
   ],
   include_directories: [ rootInclude, ],
-  c_args: nemo_definitions,
-  dependencies: nemo_deps,
+  c_args: kraken_definitions,
+  dependencies: kraken_deps,
   install: true
 )
 
-nemo_open_with = executable('nemo-open-with',
-  [ 'nemo-open-with-main.c' ],
+kraken_open_with = executable('kraken-open-with',
+  [ 'kraken-open-with-main.c' ],
   include_directories: [ rootInclude, ],
-  c_args: nemo_definitions,
-  dependencies: nemo_deps,
+  c_args: kraken_definitions,
+  dependencies: kraken_deps,
   install: true
 )
 
 # LibExecs
-nemo_extensions_list = executable('nemo-extensions-list',
-  [ 'nemo-extensions-list.c' ],
+kraken_extensions_list = executable('kraken-extensions-list',
+  [ 'kraken-extensions-list.c' ],
   include_directories: [ rootInclude, ],
-  c_args: nemo_definitions,
-  dependencies: [ nemo_deps ],
+  c_args: kraken_definitions,
+  dependencies: [ kraken_deps ],
   install: true,
   install_dir: libExecPath,
 )

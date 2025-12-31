@@ -1,11 +1,11 @@
 # List of source files that should NOT be translated.
 # Please keep this file sorted alphabetically.
 libbackground/applier.c
-data/nemo-autorun-software.desktop.in
-data/nemo-computer.desktop.in
-data/nemo-file-management-properties.desktop.in
-data/nemo-folder-handler.desktop.in
-data/nemo-home.desktop.in
-data/nemo.desktop.in
-data/nemo-browser.desktop.in
+data/kraken-autorun-software.desktop.in
+data/kraken-computer.desktop.in
+data/kraken-file-management-properties.desktop.in
+data/kraken-folder-handler.desktop.in
+data/kraken-home.desktop.in
+data/kraken.desktop.in
+data/kraken-browser.desktop.in
 debian

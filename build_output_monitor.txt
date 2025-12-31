@@ -1,0 +1,53 @@
+ninja: Entering directory `build-kraken'
+[1/2] Compiling C object kraken-core/kraken-daemon.p/kraken-daemon.c.o
+FAILED: kraken-core/kraken-daemon.p/kraken-daemon.c.o 
+cc -Ikraken-core/kraken-daemon.p -Ikraken-core -I../kraken-core -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O0 -g -Wno-deprecated-declarations -Wno-deprecated -Wno-declaration-after-statement -DGLIB_DISABLE_DEPRECATION_WARNINGS -fno-omit-frame-pointer -pthread -MD -MQ kraken-core/kraken-daemon.p/kraken-daemon.c.o -MF kraken-core/kraken-daemon.p/kraken-daemon.c.o.d -o kraken-core/kraken-daemon.p/kraken-daemon.c.o -c ../kraken-core/kraken-daemon.c
+In file included from ../kraken-core/kraken-daemon.c:3:
+../kraken-core/kraken-daemon.h:19:5: error: unknown type name ‘GFileMonitor’
+   19 |     GFileMonitor* monitor;
+      |     ^~~~~~~~~~~~
+../kraken-core/kraken-daemon.c:5:43: error: unknown type name ‘GFileMonitor’
+    5 | static void kraken_daemon_on_file_changed(GFileMonitor* monitor,
+      |                                           ^~~~~~~~~~~~
+../kraken-core/kraken-daemon.c:6:43: error: unknown type name ‘GFile’
+    6 |                                           GFile* file,
+      |                                           ^~~~~
+../kraken-core/kraken-daemon.c:7:43: error: unknown type name ‘GFile’
+    7 |                                           GFile* other_file,
+      |                                           ^~~~~
+../kraken-core/kraken-daemon.c:8:43: error: unknown type name ‘GFileMonitorEvent’
+    8 |                                           GFileMonitorEvent event_type,
+      |                                           ^~~~~~~~~~~~~~~~~
+../kraken-core/kraken-daemon.c: In function ‘kraken_daemon_setup_monitoring’:
+../kraken-core/kraken-daemon.c:18:5: error: unknown type name ‘GFile’
+   18 |     GFile* file = g_file_new_for_path(watch_path);
+      |     ^~~~~
+../kraken-core/kraken-daemon.c:18:19: warning: implicit declaration of function ‘g_file_new_for_path’ [-Wimplicit-function-declaration]
+   18 |     GFile* file = g_file_new_for_path(watch_path);
+      |                   ^~~~~~~~~~~~~~~~~~~
+../kraken-core/kraken-daemon.c:18:19: warning: initialization of ‘int *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+../kraken-core/kraken-daemon.c:21:21: warning: implicit declaration of function ‘g_file_monitor_directory’ [-Wimplicit-function-declaration]
+   21 |     self->monitor = g_file_monitor_directory(file, G_FILE_MONITOR_NONE, NULL, &error);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../kraken-core/kraken-daemon.c:21:52: error: ‘G_FILE_MONITOR_NONE’ undeclared (first use in this function)
+   21 |     self->monitor = g_file_monitor_directory(file, G_FILE_MONITOR_NONE, NULL, &error);
+      |                                                    ^~~~~~~~~~~~~~~~~~~
+../kraken-core/kraken-daemon.c:21:52: note: each undeclared identifier is reported only once for each function it appears in
+../kraken-core/kraken-daemon.c:25:9: warning: implicit declaration of function ‘g_object_unref’; did you mean ‘g_tree_unref’? [-Wimplicit-function-declaration]
+   25 |         g_object_unref(file);
+      |         ^~~~~~~~~~~~~~
+      |         g_tree_unref
+../kraken-core/kraken-daemon.c:30:5: warning: implicit declaration of function ‘g_signal_connect’ [-Wimplicit-function-declaration]
+   30 |     g_signal_connect(self->monitor, "changed", G_CALLBACK(kraken_daemon_on_file_changed), self);
+      |     ^~~~~~~~~~~~~~~~
+../kraken-core/kraken-daemon.c:30:48: warning: implicit declaration of function ‘G_CALLBACK’ [-Wimplicit-function-declaration]
+   30 |     g_signal_connect(self->monitor, "changed", G_CALLBACK(kraken_daemon_on_file_changed), self);
+      |                                                ^~~~~~~~~~
+../kraken-core/kraken-daemon.c:30:59: error: ‘kraken_daemon_on_file_changed’ undeclared (first use in this function)
+   30 |     g_signal_connect(self->monitor, "changed", G_CALLBACK(kraken_daemon_on_file_changed), self);
+      |                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../kraken-core/kraken-daemon.c: In function ‘kraken_daemon_free’:
+../kraken-core/kraken-daemon.c:115:9: warning: implicit declaration of function ‘g_file_monitor_cancel’ [-Wimplicit-function-declaration]
+  115 |         g_file_monitor_cancel(self->monitor);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.

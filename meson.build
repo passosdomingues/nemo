@@ -1,18 +1,18 @@
 # Meson build file
 
-# https://github.com/linuxmint/nemo
-project('nemo', 'c', version : '6.6.2', meson_version : '>=0.56.0')
+# https://github.com/linuxmint/kraken
+project('kraken', 'c', version : '0.1.0-kraken', meson_version : '>=0.56.0')
 
 # 1. If the library code has changed at all since last release, then increment revision.
 # 2. If any interfaces have been added, then increment current and set revision to 0.
 # Interface break is not allowed.
-nemo_extension_current  = 5
-nemo_extension_revision = 0
+kraken_extension_current  = 5
+kraken_extension_revision = 0
 
 # We need to decrement current by one in the calculation of the age because
 # the library was started with version "1:0:0" instead of "0:0:0"
-NEMO_EXTENSION_VERSION_INFO = '@0@:@1@:@2@'.format(
-  nemo_extension_current, nemo_extension_revision, nemo_extension_current - 1
+KRAKEN_EXTENSION_VERSION_INFO = '@0@:@1@:@2@'.format(
+  kraken_extension_current, kraken_extension_revision, kraken_extension_current - 1
 )
 
 ################################################################################
@@ -146,7 +146,7 @@ endif
 enableEmptyView = get_option('empty_view')
 conf.set10('ENABLE_EMPTY_VIEW', enableEmptyView)
 
-conf.set_quoted('GETTEXT_PACKAGE', 'nemo')
+conf.set_quoted('GETTEXT_PACKAGE', 'kraken')
 conf.set_quoted('LOCALE_DIR',  join_paths(get_option('prefix'), get_option('localedir')))
 conf.set_quoted('LOCALEDIR',   join_paths(get_option('prefix'), get_option('localedir')))
 conf.set('ENABLE_NLS', cc.has_header('libintl.h'))
@@ -162,16 +162,16 @@ configure_file(
 ################################################################################
 
 rootInclude = include_directories('.')
-nemoDataPath      = join_paths(get_option('prefix'), get_option('datadir'), 'nemo')
+krakenDataPath      = join_paths(get_option('prefix'), get_option('datadir'), 'kraken')
 libExecPath       = join_paths(get_option('prefix'), get_option('libexecdir'))
 # Keep this constant, in case some extensions are behind in being updated...
-nemoExtensionPath = join_paths(get_option('prefix'), get_option('libdir'), 'nemo', 'extensions-3.0')
+krakenExtensionPath = join_paths(get_option('prefix'), get_option('libdir'), 'kraken', 'extensions-3.0')
 
-nemo_definitions =  [
-  '-DNEMO_DATADIR="@0@"'.format(nemoDataPath),
-  '-DNEMO_EXTENSIONDIR="@0@"'.format(nemoExtensionPath),
+kraken_definitions =  [
+  '-DKRAKEN_DATADIR="@0@"'.format(krakenDataPath),
+  '-DKRAKEN_EXTENSIONDIR="@0@"'.format(krakenExtensionPath),
   '-DLIBEXECDIR="@0@"'.format(libExecPath),
-  '-DG_LOG_DOMAIN="Nemo"'
+  '-DG_LOG_DOMAIN="Kraken"'
 ]
 
 po_subdir = join_paths(meson.project_source_root(), 'po')
@@ -182,14 +182,17 @@ subdir('data')
 subdir('eel')
 subdir('files')
 subdir('gresources')
-subdir('libnemo-extension')
-subdir('libnemo-private')
+subdir('libkraken-extension')
+subdir('kraken-lib')
+subdir('kraken-core')
+subdir('libkraken-private')
 # subdir('po')
 subdir('src')
 subdir('search-helpers')
 subdir('test')
 subdir('docs')
 subdir('action-layout-editor')
+subdir('kraken-extensions')
 
 message('\n'.join(['',
 '        @0@-@1@'.format(meson.project_name(), meson.project_version()),
@@ -202,8 +205,8 @@ message('\n'.join(['',
 '    Tracker support:        @0@'.format(tracker_enabled),
 '    Wayland support:        @0@'.format(cc.has_header('gdk/gdkwayland.h', dependencies: gtk)),
 '',
-'    nemo-extension documentation: @0@'.format(gtkdoc_enabled),
-'    nemo-extension introspection: @0@'.format(true),
+'    kraken-extension documentation: @0@'.format(gtkdoc_enabled),
+'    kraken-extension introspection: @0@'.format(true),
 '',
 '    debugging support:      @0@'.format(buildtype),
 '    perf profiling support: @0@'.format(buildtype == 'debug'),

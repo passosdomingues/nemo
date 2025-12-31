@@ -1,0 +1,2 @@
+#!/bin/sh
+./kraken --check --g-fatal-warnings

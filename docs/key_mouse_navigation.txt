@@ -1,7 +1,7 @@
 This document describes the keyboard and mouse navigation model used
-in the default Nemo views in detail. This is useful as a a guide
-for people implementing a Nemo view or something else that wants
-to have a feel that is compatible with Nemo.
+in the default Kraken views in detail. This is useful as a a guide
+for people implementing a Kraken view or something else that wants
+to have a feel that is compatible with Kraken.
 
 *********** Icon view ********************
 

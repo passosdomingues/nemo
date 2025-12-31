@@ -34,8 +34,8 @@
 G_BEGIN_DECLS
 
 #define	EEL_TRASH_URI "trash:"
-#define EEL_DESKTOP_URI "x-nemo-desktop:"
-#define EEL_SEARCH_URI "x-nemo-search:"
+#define EEL_DESKTOP_URI "x-kraken-desktop:"
+#define EEL_SEARCH_URI "x-kraken-search:"
 
 gboolean           eel_uri_is_trash                      (const char           *uri);
 gboolean           eel_uri_is_trash_folder               (const char           *uri);

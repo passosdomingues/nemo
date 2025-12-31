@@ -1,0 +1,22 @@
+Kraken Daemon: Database initialized at /home/rafael/.kraken/events.db
+Kraken Daemon: Monitoring directory /home/rafael/KrakenDrive/data
+Kraken Daemon: Submerging into the file system abysm...
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CREATED on /home/rafael/KrakenDrive/data/manifesto_test.txt
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/1767128041726004
+Create a readonly snapshot of '/home/rafael/KrakenDrive/data' in '/home/rafael/KrakenDrive/snapshots/1767128041726004'
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/1767128041726004
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGED on /home/rafael/KrakenDrive/data/manifesto_test.txt
+Kraken LLM: Running summarization: '/home/rafael/.gemini/antigravity/scratch/nemo/deps/llama.cpp/build/bin/llama-cli' -m '/home/rafael/.kraken/models/deepseek-coder-1.3b-instruct.Q4_K_M.gguf' -p "<|im_start|>system
+You are a helpful assistant that summarizes files.
+<|im_end|>
+<|im_start|>user
+Summarize the following content in one concise sentence: " -f '/home/rafael/KrakenDrive/data/manifesto_test.txt' --temp 0.1 -n 64 --simple-io --log-disable
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGES_DONE_HINT on /home/rafael/KrakenDrive/data/manifesto_test.txt
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/1767128042206457
+Create a readonly snapshot of '/home/rafael/KrakenDrive/data' in '/home/rafael/KrakenDrive/snapshots/1767128042206457'
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/1767128042206457
+Kraken LLM: Running summarization: '/home/rafael/.gemini/antigravity/scratch/nemo/deps/llama.cpp/build/bin/llama-cli' -m '/home/rafael/.kraken/models/deepseek-coder-1.3b-instruct.Q4_K_M.gguf' -p "<|im_start|>system
+You are a helpful assistant that summarizes files.
+<|im_end|>
+<|im_start|>user
+Summarize the following content in one concise sentence: " -f '/home/rafael/KrakenDrive/data/manifesto_test.txt' --temp 0.1 -n 64 --simple-io --log-disable

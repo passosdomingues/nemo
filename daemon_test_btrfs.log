@@ -1,0 +1,13 @@
+Kraken Daemon: Database initialized at /home/rafael/.kraken/events.db
+Kraken Daemon: Monitoring directory /home/rafael/KrakenDrive/data
+Kraken Daemon: Submerging into the file system abysm...
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CREATED on /home/rafael/KrakenDrive/data/test_file.txt
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/20251230_173857
+Create a readonly snapshot of '/home/rafael/KrakenDrive/data' in '/home/rafael/KrakenDrive/snapshots/20251230_173857'
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/20251230_173857
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGED on /home/rafael/KrakenDrive/data/test_file.txt
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGES_DONE_HINT on /home/rafael/KrakenDrive/data/test_file.txt
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/20251230_173857
+ERROR: cannot snapshot '/home/rafael/KrakenDrive/data': Read-only file system
+Create a readonly snapshot of '/home/rafael/KrakenDrive/data' in '/home/rafael/KrakenDrive/snapshots/20251230_173857/data'
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/20251230_173857

@@ -1,0 +1,145 @@
+ninja: Entering directory `build-kraken'
+[1/85] Generating gresources/kraken-resources_c with a custom command
+[2/85] Compiling C object libkraken-extension/libkraken-extension.so.1.4.0.p/meson-generated_.._.._gresources_kraken-resources.c.o
+[3/85] Linking target libkraken-extension/libkraken-extension.so.1.4.0
+[4/85] Compiling C object src/kraken.p/kraken-bookmarks-window.c.o
+[5/85] Compiling C object libkraken-private/libkraken-private.a.p/kraken-dnd.c.o
+[6/85] Compiling C object src/kraken.p/kraken-desktop-icon-grid-view.c.o
+[7/85] Compiling C object libkraken-private/libkraken-private.a.p/kraken-column-chooser.c.o
+[8/85] Compiling C object src/kraken.p/kraken-connect-server-dialog.c.o
+[9/85] Generating symbol file libkraken-extension/libkraken-extension.so.1.4.0.p/libkraken-extension.so.1.4.0.symbols
+[10/85] Compiling C object eel/libeel.a.p/eel-gtk-extensions.c.o
+[11/85] Compiling C object libkraken-private/libkraken-private.a.p/kraken-file-conflict-dialog.c.o
+[12/85] Linking static target libkraken-private/libkraken-private.a
+[13/85] Compiling C object src/kraken.p/kraken-icon-view.c.o
+[14/85] Compiling C object eel/libeel.a.p/eel-editable-label.c.o
+[15/85] Linking static target eel/libeel.a
+[16/85] Compiling C object src/kraken.p/kraken-view-factory.c.o
+[17/85] Linking target eel/check-program
+[18/85] Compiling C object src/kraken.p/kraken-window-pane.c.o
+[19/85] Compiling C object src/kraken.p/kraken-window-manage-views.c.o
+[20/85] Compiling C object src/kraken-desktop.p/kraken-bookmarks-window.c.o
+[21/85] Compiling C object src/kraken-desktop.p/kraken-connect-server-dialog.c.o
+[22/85] Compiling C object src/kraken-desktop.p/kraken-desktop-icon-grid-view.c.o
+[23/85] Compiling C object src/kraken.p/kraken-window.c.o
+[24/85] Compiling C object src/kraken.p/kraken-list-view.c.o
+[25/85] Compiling C object src/kraken.p/kraken-properties-window.c.o
+In file included from /usr/include/glib-2.0/glib/giochannel.h:36,
+                 from /usr/include/glib-2.0/glib.h:56,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from ../src/kraken-properties-window.h:29,
+                 from ../src/kraken-properties-window.c:27:
+../src/kraken-properties-window.c: In function ‘get_pending_key’:
+/usr/include/glib-2.0/glib/gstring.h:74:5: warning: ignoring return value of ‘g_string_free_and_steal’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   70 |   (__builtin_constant_p (free_segment) ?        \
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   71 |     ((free_segment) ?                           \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   72 |       (g_string_free) ((str), (free_segment)) : \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   73 |       g_string_free_and_steal (str))            \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   74 |     :                                           \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   75 |     (g_string_free) ((str), (free_segment)))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/kraken-properties-window.c:4739:9: note: in expansion of macro ‘g_string_free’
+ 4739 |         g_string_free (key, FALSE);
+      |         ^~~~~~~~~~~~~
+[26/85] Compiling C object src/kraken-desktop.p/kraken-navigation-state.c.o
+[27/85] Compiling C object src/kraken-desktop.p/kraken-icon-view.c.o
+[28/85] Compiling C object src/kraken-desktop.p/kraken-previewer.c.o
+[29/85] Compiling C object src/kraken-desktop.p/kraken-notebook.c.o
+[30/85] Compiling C object src/kraken-desktop.p/kraken-plugin-manager.c.o
+[31/85] Compiling C object src/kraken-desktop.p/kraken-list-view.c.o
+[32/85] Compiling C object src/kraken-desktop.p/kraken-self-check-functions.c.o
+[33/85] Compiling C object src/kraken-desktop.p/kraken-pathbar.c.o
+[34/85] Compiling C object src/kraken-desktop.p/kraken-progress-info-widget.c.o
+[35/85] Compiling C object src/kraken-desktop.p/kraken-places-sidebar.c.o
+[36/85] Compiling C object src/kraken.p/kraken-view.c.o
+[37/85] Compiling C object src/kraken-desktop.p/kraken-progress-ui-handler.c.o
+[38/85] Compiling C object src/kraken-desktop.p/kraken-template-config-widget.c.o
+[39/85] Generating libkraken-extension/Kraken-3.0.gir with a custom command (wrapped by meson to set env)
+../libkraken-extension/kraken-file-info.h:35: Warning: Kraken: symbol='NEMO_FILE_INFO': Unknown namespace for symbol 'NEMO_FILE_INFO'
+../libkraken-extension/kraken-file-info.h:36: Warning: Kraken: symbol='NEMO_IS_FILE_INFO': Unknown namespace for symbol 'NEMO_IS_FILE_INFO'
+../libkraken-extension/kraken-file-info.h:37: Warning: Kraken: symbol='NEMO_FILE_INFO_GET_IFACE': Unknown namespace for symbol 'NEMO_FILE_INFO_GET_IFACE'
+<unknown>:: Warning: Kraken: (Interface)FileInfo: Couldn't find associated structure for 'FileInfo'
+[40/85] Compiling C object src/kraken-desktop.p/kraken-query-editor.c.o
+[41/85] Compiling C object src/kraken-desktop.p/kraken-statusbar.c.o
+[42/85] Compiling C object src/kraken-desktop.p/kraken-thumbnail-problem-bar.c.o
+[43/85] Compiling C object src/kraken-desktop.p/kraken-toolbar.c.o
+[44/85] Compiling C object src/kraken-desktop.p/kraken-trash-bar.c.o
+[45/85] Compiling C object src/kraken-desktop.p/kraken-properties-window.c.o
+In file included from /usr/include/glib-2.0/glib/giochannel.h:36,
+                 from /usr/include/glib-2.0/glib.h:56,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from ../src/kraken-properties-window.h:29,
+                 from ../src/kraken-properties-window.c:27:
+../src/kraken-properties-window.c: In function ‘get_pending_key’:
+/usr/include/glib-2.0/glib/gstring.h:74:5: warning: ignoring return value of ‘g_string_free_and_steal’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   70 |   (__builtin_constant_p (free_segment) ?        \
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   71 |     ((free_segment) ?                           \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   72 |       (g_string_free) ((str), (free_segment)) : \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   73 |       g_string_free_and_steal (str))            \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   74 |     :                                           \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   75 |     (g_string_free) ((str), (free_segment)))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/kraken-properties-window.c:4739:9: note: in expansion of macro ‘g_string_free’
+ 4739 |         g_string_free (key, FALSE);
+      |         ^~~~~~~~~~~~~
+[46/85] Linking target src/kraken
+[47/85] Compiling C object src/kraken-desktop.p/kraken-tree-sidebar-model.c.o
+[48/85] Compiling C object src/kraken-desktop.p/kraken-view-factory.c.o
+[49/85] Compiling C object src/kraken-desktop.p/kraken-view-dnd.c.o
+[50/85] Compiling C object src/kraken-desktop.p/kraken-tree-sidebar.c.o
+[51/85] Compiling C object src/kraken-desktop.p/kraken-window-bookmarks.c.o
+[52/85] Compiling C object src/kraken-desktop.p/kraken-window-pane.c.o
+[53/85] Compiling C object src/kraken-desktop.p/kraken-window-menus.c.o
+[54/85] Compiling C object src/kraken-desktop.p/kraken-window-manage-views.c.o
+[55/85] Compiling C object src/kraken-desktop.p/kraken-window-slot-dnd.c.o
+[56/85] Linking target src/kraken-autorun-software
+[57/85] Generating libkraken-extension/Kraken-3.0.typelib with a custom command
+[58/85] Compiling C object src/kraken-desktop.p/kraken-x-content-bar.c.o
+[59/85] Compiling C object src/kraken-desktop.p/kraken-desktop-application.c.o
+[60/85] Compiling C object src/kraken-desktop.p/kraken-desktop-main.c.o
+[61/85] Compiling C object src/kraken-desktop.p/kraken-desktop-icon-view.c.o
+[62/85] Compiling C object src/kraken-desktop.p/kraken-window-slot.c.o
+[63/85] Compiling C object src/kraken-desktop.p/kraken-view.c.o
+[64/85] Compiling C object src/kraken-extensions-list.p/kraken-extensions-list.c.o
+[65/85] Compiling C object src/kraken-desktop.p/kraken-window.c.o
+[66/85] Compiling C object src/kraken-connect-server.p/kraken-connect-server-dialog.c.o
+[67/85] Compiling C object search-helpers/kraken-ppt-to-txt.p/kraken-ppt-to-txt.c.o
+[68/85] Compiling C object search-helpers/kraken-mso-to-txt.p/kraken-mso-to-txt.c.o
+../search-helpers/kraken-mso-to-txt.c: In function ‘process_file’:
+../search-helpers/kraken-mso-to-txt.c:64:19: warning: the comparison will always evaluate as ‘true’ for the address of ‘chunk’ will never be NULL [-Waddress]
+   64 |         if (chunk != NULL)
+      |                   ^~
+../search-helpers/kraken-mso-to-txt.c:60:16: note: ‘chunk’ declared here
+   60 |         guint8 chunk[size];
+      |                ^~~~~
+[69/85] Compiling C object src/kraken-connect-server.p/kraken-connect-server-operation.c.o
+[70/85] Linking target search-helpers/kraken-ppt-to-txt
+[71/85] Compiling C object src/kraken-connect-server.p/kraken-bookmark-list.c.o
+[72/85] Compiling C object src/kraken-connect-server.p/kraken-connect-server-dialog-main.c.o
+[73/85] Linking target search-helpers/kraken-mso-to-txt
+[74/85] Compiling C object src/kraken-open-with.p/kraken-open-with-main.c.o
+[75/85] Compiling C object test/test-kraken-search-engine.p/test-kraken-search-engine.c.o
+[76/85] Linking target src/kraken-extensions-list
+[77/85] Linking target src/kraken-desktop
+[78/85] Compiling C object test/test-kraken-directory-async.p/test-kraken-directory-async.c.o
+[79/85] Compiling C object test/test-kraken-copy.p/test-copy.c.o
+[80/85] Linking target src/kraken-connect-server
+[81/85] Compiling C object test/test-kraken-copy.p/test.c.o
+[82/85] Linking target test/test-kraken-search-engine
+[83/85] Linking target src/kraken-open-with
+[84/85] Linking target test/test-kraken-directory-async
+[85/85] Linking target test/test-kraken-copy

@@ -1,28 +1,35 @@
 
 test('Search Engine test',
-  executable('test-nemo-search-engine',
-    [ 'test-nemo-search-engine.c' ],
+  executable('test-kraken-search-engine',
+    [ 'test-kraken-search-engine.c' ],
     include_directories: [ rootInclude, ],
-    dependencies: [ gtk, nemo_private ],
+    dependencies: [ gtk, kraken_private ],
   ),
   args: []
 )
 
 test('Directory Async test',
-  executable('test-nemo-directory-async',
-    [ 'test-nemo-directory-async.c' ],
+  executable('test-kraken-directory-async',
+    [ 'test-kraken-directory-async.c' ],
     include_directories: [ rootInclude, ],
-    dependencies: [ gtk, nemo_private ],
+    dependencies: [ gtk, kraken_private ],
   ),
   args: []
 )
 
 test('Copy test',
-  executable('test-nemo-copy',
+  executable('test-kraken-copy',
     [ 'test-copy.c', 'test.c' ],
     include_directories: [ rootInclude, ],
-    dependencies: [ gtk, nemo_private ],
-    c_args: nemo_definitions,
+    dependencies: [ gtk, kraken_private ],
+    c_args: kraken_definitions,
   ),
   args: []
+)
+
+executable('test-kraken-uri',
+  [ 'test-kraken-uri.c' ],
+  include_directories: [ rootInclude, ],
+  dependencies: [ gtk, kraken_private ],
+  c_args: kraken_definitions,
 )

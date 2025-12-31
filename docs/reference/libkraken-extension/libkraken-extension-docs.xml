@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+
+<book id="index" xmlns:xi="http://www.w3.org/2003/XInclude">
+  <bookinfo>
+    <title>Kraken Extension Reference Manual</title>
+    <releaseinfo>For Kraken-Extension &version;</releaseinfo>
+
+    </bookinfo>
+
+  <part>
+    <title>API Reference</title>
+
+    <chapter>
+      <title>Extension Interfaces</title>
+      <xi:include href="xml/kraken-column-provider.xml" />
+      <xi:include href="xml/kraken-info-provider.xml" />
+      <xi:include href="xml/kraken-location-widget-provider.xml" />
+      <xi:include href="xml/kraken-menu-provider.xml" />
+      <!-- <xi:include href="xml/kraken-name-and-desc-provider.xml" /> -->
+      <xi:include href="xml/kraken-property-page-provider.xml" />
+    </chapter>
+
+    <chapter>
+      <title>Classes</title>
+      <xi:include href="xml/kraken-column.xml" />
+      <xi:include href="xml/kraken-file-info.xml" />
+      <xi:include href="xml/kraken-menu.xml" />
+      <xi:include href="xml/kraken-property-page.xml" />
+      <xi:include href="xml/kraken-simple-button.xml" />
+    </chapter>
+
+    <xi:include href="xml/kraken-extension-types.xml" />
+
+
+  </part>
+  <index>
+    <title id="index-all">Index</title>
+  </index>
+</book>

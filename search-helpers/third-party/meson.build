@@ -1,15 +1,15 @@
 helpers = [
-  'untex.nemo_search_helper',
-  'exif.nemo_search_helper',
-  'id3.nemo_search_helper',
-  'mso-doc.nemo_search_helper',
-  'pdf2txt.nemo_search_helper',
-  'pdftotext.nemo_search_helper',
-  'ps2ascii.nemo_search_helper'
+  'untex.kraken_search_helper',
+  'exif.kraken_search_helper',
+  'id3.kraken_search_helper',
+  'mso-doc.kraken_search_helper',
+  'pdf2txt.kraken_search_helper',
+  'pdftotext.kraken_search_helper',
+  'ps2ascii.kraken_search_helper'
 ]
 
 install_data(
     helpers,
-    install_dir: join_paths(nemoDataPath, 'search-helpers')
+    install_dir: join_paths(krakenDataPath, 'search-helpers')
 )
 

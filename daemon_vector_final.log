@@ -1,0 +1,20 @@
+Kraken Daemon: Database initialized at /home/rafael/.kraken/events.db
+Kraken Daemon: Monitoring directory /home/rafael/KrakenDrive/data
+Kraken Daemon: Submerging into the file system abysm...
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGED on /home/rafael/KrakenDrive/data/vector_final_v2.txt
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGES_DONE_HINT on /home/rafael/KrakenDrive/data/vector_final_v2.txt
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/1767130462970729
+DEBUG: Before g_spawn_command_line_sync
+Create a readonly snapshot of '/home/rafael/KrakenDrive/data' in '/home/rafael/KrakenDrive/snapshots/1767130462970729'
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/1767130462970729
+DEBUG: Before kraken_toon_new
+DEBUG: Before kraken_toon_add_relation
+DEBUG: Before kraken_toon_to_json
+DEBUG: Before kraken_daemon_store_event
+DEBUG: Before kraken_llm_summarize_async
+DEBUG: After kraken_llm_summarize_async
+Kraken Daemon: Clean Summary: Final attempt at vector indexing, triggering final indexing event.
+Kraken Daemon: Triggering embedding for /home/rafael/KrakenDrive/data/vector_final_v2.txt
+Kraken LLM: Sending embed request for /home/rafael/KrakenDrive/data/vector_final_v2.txt
+Kraken Daemon: Received vector (dim 2048) for /home/rafael/KrakenDrive/data/vector_final_v2.txt
+Kraken Daemon: Embedding stored for /home/rafael/KrakenDrive/data/vector_final_v2.txt

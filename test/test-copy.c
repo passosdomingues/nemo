@@ -1,8 +1,8 @@
 #include "test.h"
 
-#include <libnemo-private/nemo-file-operations.h>
-#include <libnemo-private/nemo-progress-info.h>
-#include <libnemo-private/nemo-progress-info-manager.h>
+#include <libkraken-private/kraken-file-operations.h>
+#include <libkraken-private/kraken-progress-info.h>
+#include <libkraken-private/kraken-progress-info-manager.h>
 
 static void
 copy_done (GHashTable *debuting_uris, 
@@ -13,24 +13,24 @@ copy_done (GHashTable *debuting_uris,
 }
 
 static void
-changed_cb (NemoProgressInfo *info,
+changed_cb (KrakenProgressInfo *info,
 	    gpointer data)
 {
 	g_print ("Changed: %s -- %s\n",
-		 nemo_progress_info_get_status (info),
-		 nemo_progress_info_get_details (info));
+		 kraken_progress_info_get_status (info),
+		 kraken_progress_info_get_details (info));
 }
 
 static void
-progress_changed_cb (NemoProgressInfo *info,
+progress_changed_cb (KrakenProgressInfo *info,
 		     gpointer data)
 {
 	g_print ("Progress changed: %f\n",
-		 nemo_progress_info_get_progress (info));
+		 kraken_progress_info_get_progress (info));
 }
 
 static void
-finished_cb (NemoProgressInfo *info,
+finished_cb (KrakenProgressInfo *info,
 	     gpointer data)
 {
 	g_print ("Finished\n");
@@ -46,8 +46,8 @@ main (int argc, char* argv[])
 	GFile *source;
 	int i;
 	GList *infos;
-        NemoProgressInfoManager *manager;
-	NemoProgressInfo *progress_info;
+        KrakenProgressInfoManager *manager;
+	KrakenProgressInfo *progress_info;
 	
 	test_init (&argc, &argv);
 
@@ -69,22 +69,22 @@ main (int argc, char* argv[])
 	
 	gtk_widget_show (window);
 
-        manager = nemo_progress_info_manager_new ();
+        manager = kraken_progress_info_manager_new ();
 
-	nemo_file_operations_copy (sources,
+	kraken_file_operations_copy (sources,
 				       NULL /* GArray *relative_item_points */,
 				       dest,
 				       GTK_WINDOW (window),
 				       copy_done, NULL);
         
-	infos = nemo_progress_info_manager_get_all_infos (manager);
+	infos = kraken_progress_info_manager_get_all_infos (manager);
 
 	if (infos == NULL) {
 		g_object_unref (manager);
 		return 0;
 	}
 
-	progress_info = NEMO_PROGRESS_INFO (infos->data);
+	progress_info = KRAKEN_PROGRESS_INFO (infos->data);
 
 	g_signal_connect (progress_info, "changed", (GCallback)changed_cb, NULL);
 	g_signal_connect (progress_info, "progress-changed", (GCallback)progress_changed_cb, NULL);

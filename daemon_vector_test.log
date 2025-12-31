@@ -1,0 +1,14 @@
+Kraken Daemon: Database initialized at /home/rafael/.kraken/events.db
+Kraken Daemon: Monitoring directory /home/rafael/KrakenDrive/data
+Kraken Daemon: Submerging into the file system abysm...
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CREATED on /home/rafael/KrakenDrive/data/vector_test.txt
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/1767129824177268
+Create a readonly snapshot of '/home/rafael/KrakenDrive/data' in '/home/rafael/KrakenDrive/snapshots/1767129824177268'
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/1767129824177268
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGED on /home/rafael/KrakenDrive/data/vector_test.txt
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGES_DONE_HINT on /home/rafael/KrakenDrive/data/vector_test.txt
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/1767129824812944
+Create a readonly snapshot of '/home/rafael/KrakenDrive/data' in '/home/rafael/KrakenDrive/snapshots/1767129824812944'
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/1767129824812944
+Kraken Daemon: Clean Summary: Semantic search, or vector indexing as it's called, is a method in which data is represented and indexed in a way that enables efficient and meaningful search operations. This makes it possible to find information based on the content of a query string without having to parse the entire text.
+Kraken Daemon: Clean Summary: The semantic search function in AI is expected to be integrated into the system in the next major update.

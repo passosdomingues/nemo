@@ -1,0 +1,47 @@
+Kraken Daemon: Database initialized at /home/rafael/.kraken/events.db
+Kraken Daemon: Monitoring directory /home/rafael/KrakenDrive/data
+Kraken Daemon: Submerging into the file system abysm...
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CREATED on /home/rafael/KrakenDrive/data
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/1767196288011835
+ERROR: Not a Btrfs filesystem: Invalid argument
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/1767196288011835
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGES_DONE_HINT on /home/rafael/KrakenDrive/data
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/1767196288153075
+ERROR: Not a Btrfs filesystem: Invalid argument
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/1767196288153075
+Kraken Daemon: Clean Summary: The term "empty or unreadable file" is typically used to describe a file that is not currently open, or that has not been saved or closed. In the context of computer systems, this means that there is no data that can be processed or displayed.
+Kraken Daemon: Triggering embedding & tagging for /home/rafael/KrakenDrive/data
+Kraken Daemon: Clean Summary: The empty or unreadable file is a type of file that cannot be accessed or read by the system.
+Kraken Daemon: Triggering embedding & tagging for /home/rafael/KrakenDrive/data
+Kraken Daemon: Received vector (dim 2048) for /home/rafael/KrakenDrive/data
+Kraken Daemon: Embedding stored for /home/rafael/KrakenDrive/data
+Kraken Daemon: Tags extracted for /home/rafael/KrakenDrive/data: [Technical Tags: File] [System] [Accessibility] [Type] [Readability
+Topical Tags: Empty] [File] [Unreadable] [System] 
+Kraken Daemon: Tags extracted for /home/rafael/KrakenDrive/data: [In the context of computer systems] [an "empty or unreadable file" could refer to:
+
+1. A file that is not currently open.
+2. A file that has not been saved or closed.
+3. A file that doesn't contain any data.
+4. A file that] 
+Kraken Daemon: Received vector (dim 2048) for /home/rafael/KrakenDrive/data
+Kraken Daemon: Embedding stored for /home/rafael/KrakenDrive/data
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CREATED on /home/rafael/KrakenDrive/data/deepseek_info.txt
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/1767196335864987
+ERROR: Not a Btrfs filesystem: Invalid argument
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/1767196335864987
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGED on /home/rafael/KrakenDrive/data/deepseek_info.txt
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGES_DONE_HINT on /home/rafael/KrakenDrive/data/deepseek_info.txt
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/1767196336353022
+ERROR: Not a Btrfs filesystem: Invalid argument
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/1767196336353022
+Kraken Daemon: Clean Summary: Summarize the given content: "The DeepSeek-Coder model is a powerful LLM optimized for code generation and technical tasks. It performs exceptionally well on HumanEval and other benchmarks."
+Kraken Daemon: Triggering embedding & tagging for /home/rafael/KrakenDrive/data/deepseek_info.txt
+Kraken Daemon: Clean Summary: The DeepSeek-Coder model is a powerful language model optimized for code generation and technical tasks. It excels in handling a variety of tasks, including code generation, debugging, and technical tasks.
+Kraken Daemon: Triggering embedding & tagging for /home/rafael/KrakenDrive/data/deepseek_info.txt
+Kraken Daemon: Tags extracted for /home/rafael/KrakenDrive/data/deepseek_info.txt: [I'm sorry] [but your request is not clear. The given content is already summarized. The tags would be "LLM] [code generation] [HumanEval] [benchmarks".] 
+Kraken Daemon: Tags extracted for /home/rafael/KrakenDrive/data/deepseek_info.txt: [Sure] [here are the relevant technical or topical tags from the provided content:
+Code Generation] [DeepSeek-Coder] [Language Model] [Technical Tasks] 
+Kraken Daemon: Received vector (dim 2048) for /home/rafael/KrakenDrive/data/deepseek_info.txt
+Kraken Daemon: Embedding stored for /home/rafael/KrakenDrive/data/deepseek_info.txt
+Kraken Daemon: Received vector (dim 2048) for /home/rafael/KrakenDrive/data/deepseek_info.txt
+Kraken Daemon: Embedding stored for /home/rafael/KrakenDrive/data/deepseek_info.txt

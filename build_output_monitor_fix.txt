@@ -1,0 +1,3 @@
+ninja: Entering directory `build-kraken'
+[1/2] Compiling C object kraken-core/kraken-daemon.p/kraken-daemon.c.o
+[2/2] Linking target kraken-core/kraken-daemon

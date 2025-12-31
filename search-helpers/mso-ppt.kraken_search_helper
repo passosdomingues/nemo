@@ -1,0 +1,5 @@
+[Kraken Search Helper]
+TryExec=kraken-ppt-to-txt;libreoffice;
+Exec=kraken-ppt-to-txt %s
+MimeType=application/vnd.ms-powerpoint;
+Priority=100

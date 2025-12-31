@@ -1,0 +1,5 @@
+[Kraken Search Helper]
+TryExec=kraken-xls-to-txt;
+Exec=kraken-xls-to-txt %s
+MimeType=application/vnd.ms-excel;
+Priority=100

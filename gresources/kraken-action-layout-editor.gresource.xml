@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/kraken/action-layout-editor/">
+    <file>kraken-action-layout-editor.glade</file>
+    <file>kraken-shortcuts.ui</file>
+  </gresource>
+</gresources>

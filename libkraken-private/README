@@ -1,0 +1,13 @@
+README for kraken/libkraken-private
+
+This library, libkraken-private, is totally private to kraken.
+
+If you are writing a kraken component, you should not use this
+library or link with it.  The code in here is internal to kraken
+and not available for public consumption.
+
+If you think that there is something interesting in this library that
+you would like to use in a third party component, please send mail to
+the kraken mailing list at:
+
+kraken-list@gnome.org

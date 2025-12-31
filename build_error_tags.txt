@@ -1,0 +1,24 @@
+ninja: Entering directory `/home/rafael/.gemini/antigravity/scratch/nemo/build'
+[1/110] Compiling C object src/kraken.p/kraken-extension-config-widget.c.o
+[2/110] Compiling C object src/kraken.p/kraken-desktop-window.c.o
+[3/110] Compiling C object src/kraken.p/kraken-desktop-icon-grid-view.c.o
+[4/110] Compiling C object libkraken-private/libkraken-private.a.p/kraken-tag-file.c.o
+FAILED: libkraken-private/libkraken-private.a.p/kraken-tag-file.c.o 
+cc -Ilibkraken-private/libkraken-private.a.p -Ilibkraken-private -I../libkraken-private -I. -I.. -Ieel -I../eel -Ilibkraken-extension -I../libkraken-extension -Ikraken-core -I../kraken-core -I/usr/include/cinnamon-desktop -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/x86_64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gail-3.0 -I/usr/include/json-glib-1.0 -I/usr/include/xapp -I/usr/include/libxml2 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O0 -g -Wno-deprecated-declarations -Wno-deprecated -Wno-declaration-after-statement -DGLIB_DISABLE_DEPRECATION_WARNINGS -fno-omit-frame-pointer -fPIC -pthread '-DKRAKEN_DATADIR="/home/rafael/.local/share/kraken"' '-DKRAKEN_EXTENSIONDIR="/home/rafael/.local/lib/x86_64-linux-gnu/kraken/extensions-3.0"' '-DLIBEXECDIR="/home/rafael/.local/libexec"' '-DG_LOG_DOMAIN="Kraken"' -MD -MQ libkraken-private/libkraken-private.a.p/kraken-tag-file.c.o -MF libkraken-private/libkraken-private.a.p/kraken-tag-file.c.o.d -o libkraken-private/libkraken-private.a.p/kraken-tag-file.c.o -c ../libkraken-private/kraken-tag-file.c
+In file included from ../libkraken-private/kraken-tag-file.c:2:
+../libkraken-private/kraken-tag-file.h:32:34: error: unknown type name ‘KrakenDirectory’; did you mean ‘GUserDirectory’?
+   32 | KrakenFile *kraken_tag_file_new (KrakenDirectory *directory, const char *name);
+      |                                  ^~~~~~~~~~~~~~~
+      |                                  GUserDirectory
+[5/110] Compiling C object src/kraken.p/kraken-freedesktop-dbus.c.o
+[6/110] Compiling C object src/kraken.p/kraken-connect-server-dialog.c.o
+[7/110] Compiling C object src/kraken.p/kraken-connect-server-operation.c.o
+[8/110] Compiling C object src/kraken.p/kraken-desktop-manager.c.o
+[9/110] Compiling C object src/kraken.p/kraken-desktop-overlay.c.o
+[10/110] Compiling C object src/kraken.p/kraken-file-management-properties.c.o
+[11/110] Compiling C object src/kraken.p/kraken-icon-view-grid-container.c.o
+[12/110] Compiling C object src/kraken.p/kraken-icon-view-container.c.o
+[13/110] Compiling C object src/kraken.p/kraken-icon-view.c.o
+ninja: build stopped: subcommand failed.
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/rafael/.gemini/antigravity/scratch/nemo/build

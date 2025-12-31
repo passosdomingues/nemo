@@ -1,0 +1,84 @@
+/* Desktop text stuff */
+
+.kraken-window.kraken-desktop-window notebook,
+.kraken-window.kraken-desktop-window paned {
+	background-color: transparent;
+}
+
+.kraken-desktop-window,
+.kraken-desktop-window:backdrop
+{
+    box-shadow: none;
+}
+
+KrakenDesktopWindow GtkPaned {
+    background-color: transparent;
+}
+
+.kraken-canvas-item {
+    border-radius: 3px;
+}
+
+.kraken-desktop {
+    -KrakenIconContainer-activate-prelight-icon-label: true;
+}
+
+.kraken-desktop.kraken-canvas-item {
+    color: #eeeeee;
+    text-shadow: 1px 1px alpha(black, 0.8);
+}
+
+.kraken-desktop.kraken-canvas-item:hover {
+    background-color: alpha(black, 0.5);
+    background-image: none;
+    text-shadow: none;
+}
+
+.kraken-desktop.kraken-canvas-item:selected {
+    background-color: alpha(@theme_selected_bg_color, 0.8);
+    background-image: none;
+    text-shadow: none;
+    color: #f5f5f5;
+}
+
+/* EelEditableLabel (icon labels) */
+.kraken-desktop.view .entry,
+.kraken-desktop.view .entry:active,
+.kraken-desktop.view .entry:focus,
+.kraken-desktop.view .entry:backdrop {
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    border-radius: 3px;
+    color: #000000;
+    caret-color: #000000;
+    text-shadow: none;
+    background-image: -gtk-gradient(linear,
+                                    left top, left bottom,
+                                    from       (shade(rgba(255,255,255,1), 0.86)),
+                                    color-stop (0.15, shade(rgba(255,255,255,1), 0.96)),
+                                    color-stop (0.50, shade(rgba(255,255,255,1), 0.98)),
+                                    to         (shade(rgba(255,255,255,1), 1.00)));
+}
+
+.kraken-desktop.view .entry:selected,
+.kraken-desktop.view .entry:focus:selected,
+.kraken-desktop.view .entry:backdrop:selected {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+    text-shadow: none;
+}
+
+#drop-bar:drop(active) {
+    box-shadow: none;
+}
+
+#drop-bar > revealer > box {
+    background-color: @theme_bg_color;
+    border-bottom: 1px solid @borders;
+}
+
+#drop-bar {
+    opacity: 1.0;
+}

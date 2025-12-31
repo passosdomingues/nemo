@@ -1,0 +1,14 @@
+Kraken Daemon: Database initialized at /home/rafael/.kraken/events.db
+Kraken Daemon: Monitoring directory /home/rafael/KrakenDrive/data
+Kraken Daemon: Submerging into the file system abysm...
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CREATED on /home/rafael/KrakenDrive/data/vector_robust.txt
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/1767130024457814
+Create a readonly snapshot of '/home/rafael/KrakenDrive/data' in '/home/rafael/KrakenDrive/snapshots/1767130024457814'
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/1767130024457814
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGED on /home/rafael/KrakenDrive/data/vector_robust.txt
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGES_DONE_HINT on /home/rafael/KrakenDrive/data/vector_robust.txt
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/1767130025174375
+Create a readonly snapshot of '/home/rafael/KrakenDrive/data' in '/home/rafael/KrakenDrive/snapshots/1767130025174375'
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/1767130025174375
+Kraken Daemon: Clean Summary: A Robust Vector Indexing Verification is a method to verify the accuracy of the results of a vector indexing operation.
+Kraken Daemon: Triggering embedding for /home/rafael/KrakenDrive/data/vector_robust.txt

@@ -1,7 +1,7 @@
 
 ## Actions layout JSON format
 
-- The layout file is saved as `~/.config/nemo/actions/actions-tree.json`.
+- The layout file is saved as `~/.config/kraken/actions/actions-tree.json`.
 - A missing or invalid layout will result in a flat list of all actions.
 - Definition requirements may change...
 

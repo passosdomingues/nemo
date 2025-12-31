@@ -1,0 +1,2 @@
+#!/bin/sh
+exec @PKG_DATADIR@/layout-editor/kraken_action_layout_editor.py

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/kraken">
+    <file>kraken-bookmarks-window.glade</file>
+    <file>kraken-desktop-overlay.glade</file>
+    <file>kraken-desktop-preferences.glade</file>
+    <file>kraken-file-management-properties.glade</file>
+    <file>kraken-search-bar.glade</file>
+
+    <file>kraken-shortcuts.ui</file>
+
+    <file>kraken-blank-desktop-window-ui.xml</file>
+    <file>kraken-desktop-icon-grid-view-ui.xml</file>
+    <file>kraken-desktop-icon-view-ui.xml</file>
+    <file>kraken-directory-view-ui.xml</file>
+    <file>kraken-icon-view-ui.xml</file>
+    <file>kraken-list-view-ui.xml</file>
+    <file>kraken-places-sidebar-ui.xml</file>
+    <file>kraken-shell-ui.xml</file>
+    <file>kraken-statusbar-ui.xml</file>
+    <file>kraken-tree-sidebar-ui.xml</file>
+
+    <file alias="icons/knob.png">knob.png</file>
+    <file alias="icons/thumbnail_frame.png">thumbnail_frame.png</file>
+
+    <file>kraken-style-fallback.css</file>
+    <file>kraken-style-fallback-mandatory.css</file>
+    <file>kraken-style-application.css</file>
+  </gresource>
+</gresources>

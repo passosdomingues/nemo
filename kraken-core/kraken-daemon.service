@@ -1,0 +1,10 @@
+[Unit]
+Description=Kraken Semantic File Manager Daemon
+After=network.target
+
+[Service]
+ExecStart=%h/.local/bin/kraken-daemon
+Restart=always
+
+[Install]
+WantedBy=default.target

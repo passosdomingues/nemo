@@ -1,0 +1,62 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH Kraken 1 "October 2012"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+kraken-desktop \- Kraken's desktop provider
+.SH SYNOPSIS
+.B kraken-desktop
+.RI [ options ] " URIs" ...
+.br
+.SH DESCRIPTION
+This manual page documents briefly the
+.B kraken-desktop
+command.
+.PP
+Kraken is the file manager for the Cinnamon desktop.
+.br
+.SH OPTIONS
+Kraken-desktop follows the usual GNU command line syntax, with long options starting
+with two dashes (`-'). A summary of options is included below.
+.TP
+.B \-\-debug
+Enable debugging code.  Example usage: 'NEMO_DEBUG=Desktop,Actions kraken-desktop --debug'.  Use NEMO_DEBUG=all for more topics.
+.TP
+.B \-\-quit
+Quit Kraken.
+.TP
+.B \-\-help
+Show a summary of options.
+.TP
+.B \-\-version
+Show Kraken's version.
+.TP
+Other standard GNOME options not listed here are also supported.
+
+.SH NOTE ON THE ROOT USER
+Ordinarily, kraken and kraken-desktop treat being run as the root user as special, with certain
+restrictions and UI changes. This behavior can be bypassed via a gsettings key. You can use
+the following command to enable/disable this override:
+
+gsettings set org.kraken.preferences treat-root-as-normal true|false
+
+.SH BUG REPORTS
+Please report bugs and feature requests here: https://github.com/linuxmint/kraken
+
+.SH AUTHOR
+This manual page was originally written for Nautilus by Takuo KITAME <kitame@debian.org> and Dafydd
+Harries <daf@muse.19inch.net> for the Debian GNU/Linux system (but may be used
+by others).

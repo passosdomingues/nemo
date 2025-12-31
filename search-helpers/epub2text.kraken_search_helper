@@ -1,0 +1,5 @@
+[Kraken Search Helper]
+TryExec=unzip;html2text;kraken-epub2text;
+Exec=kraken-epub2text %s
+MimeType=application/epub+zip;
+Priority=100

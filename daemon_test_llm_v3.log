@@ -1,0 +1,14 @@
+Kraken Daemon: Database initialized at /home/rafael/.kraken/events.db
+Kraken Daemon: Monitoring directory /home/rafael/KrakenDrive/data
+Kraken Daemon: Submerging into the file system abysm...
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CREATED on /home/rafael/KrakenDrive/data/llm_test_v3.txt
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/1767127877581082
+Create a readonly snapshot of '/home/rafael/KrakenDrive/data' in '/home/rafael/KrakenDrive/snapshots/1767127877581082'
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/1767127877581082
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGED on /home/rafael/KrakenDrive/data/llm_test_v3.txt
+Kraken LLM: Running summarization: '/home/rafael/.gemini/antigravity/scratch/nemo/deps/llama.cpp/build/bin/llama-cli' -m '/home/rafael/.kraken/models/deepseek-coder-1.3b-instruct.Q4_K_M.gguf' -p "Summarize the content of this file in one concise sentence:" -f '/home/rafael/KrakenDrive/data/llm_test_v3.txt' --temp 0.1 -n 128 --log-disable
+Kraken Daemon Event: G_FILE_MONITOR_EVENT_CHANGES_DONE_HINT on /home/rafael/KrakenDrive/data/llm_test_v3.txt
+Kraken Daemon: Triggering BTRFS Snapshot: btrfs subvolume snapshot -r /home/rafael/KrakenDrive/data /home/rafael/KrakenDrive/snapshots/1767127879826207
+Create a readonly snapshot of '/home/rafael/KrakenDrive/data' in '/home/rafael/KrakenDrive/snapshots/1767127879826207'
+Kraken Daemon: Snapshot created at /home/rafael/KrakenDrive/snapshots/1767127879826207
+Kraken LLM: Running summarization: '/home/rafael/.gemini/antigravity/scratch/nemo/deps/llama.cpp/build/bin/llama-cli' -m '/home/rafael/.kraken/models/deepseek-coder-1.3b-instruct.Q4_K_M.gguf' -p "Summarize the content of this file in one concise sentence:" -f '/home/rafael/KrakenDrive/data/llm_test_v3.txt' --temp 0.1 -n 128 --log-disable

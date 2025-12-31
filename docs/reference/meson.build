@@ -1,1 +1,1 @@
-subdir('libnemo-extension')
+subdir('libkraken-extension')

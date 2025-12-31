@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Kraken
+Comment=Start Kraken desktop at log in
+Exec=kraken-desktop
+OnlyShowIn=X-Cinnamon;
+AutostartCondition=GSettings org.kraken.desktop show-desktop-icons
+X-GNOME-AutoRestart=true
+NoDisplay=true

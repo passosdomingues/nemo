@@ -1,0 +1,73 @@
+ninja: Entering directory `build-kraken'
+[0/1] Regenerating build files.
+The Meson build system
+Version: 1.3.2
+Source dir: /home/rafael/.gemini/antigravity/scratch/nemo
+Build dir: /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken
+Build type: native build
+Project name: kraken
+Project version: 0.1.0-kraken
+C compiler for the host machine: cc (gcc 13.3.0 "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Has header "malloc.h" : YES (cached)
+Has header "sys/mount.h" : YES (cached)
+Has header "sys/param.h" : YES (cached)
+Has header "sys/vfs.h" : YES (cached)
+Has header "X11/XF86keysym.h" : YES (cached)
+Checking for function "mallopt" : YES (cached)
+Library m found: YES
+Dependency gtk+-3.0 found: YES 3.24.41 (cached)
+Dependency gio-2.0 found: YES 2.80.0 (cached)
+Dependency gio-unix-2.0 found: YES 2.80.0 (cached)
+Dependency glib-2.0 found: YES 2.80.0 (cached)
+Dependency gmodule-no-export-2.0 found: YES 2.80.0 (cached)
+Dependency gobject-2.0 found: YES 2.80.0 (cached)
+Dependency gobject-introspection-1.0 found: YES 1.80.1 (cached)
+Dependency json-glib-1.0 found: YES 1.8.0 (cached)
+Dependency cinnamon-desktop found: YES 6.4.1 (cached)
+Dependency gail-3.0 found: YES 3.24.41 (cached)
+Dependency x11 found: YES 1.8.7 (cached)
+Dependency xapp found: YES 2.8.13 (cached)
+Dependency libexif found: YES 0.6.24 (cached)
+Dependency exempi-2.0 found: YES 2.6.5 (cached)
+Dependency pango found: YES 1.52.1 (cached)
+Dependency pango found: YES 1.52.1 (cached)
+Has header "libintl.h" : YES (cached)
+Has header "locale.h" : YES (cached)
+Configuring config.h using configuration
+Configuring kraken-autorun-software.desktop using configuration
+Configuring kraken-autostart.desktop using configuration
+Configuring kraken.desktop using configuration
+Configuring kraken.service using configuration
+Configuring kraken.FileManager1.service using configuration
+Configuring org.kraken.root.policy using configuration
+Message: Copying ./files structure
+Found pkg-config: YES (/usr/bin/pkg-config) 1.8.1
+Dependency gio-2.0 found: YES 2.80.0 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency gio-2.0 found: YES 2.80.0 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency gobject-introspection-1.0 found: YES 1.80.1 (cached)
+Dependency gobject-introspection-1.0 found: YES 1.80.1 (cached)
+Program /usr/bin/x86_64-linux-gnu-g-ir-scanner found: YES (/usr/bin/x86_64-linux-gnu-g-ir-scanner)
+Dependency gobject-introspection-1.0 found: YES 1.80.1 (cached)
+Program /usr/bin/x86_64-linux-gnu-g-ir-compiler found: YES (/usr/bin/x86_64-linux-gnu-g-ir-compiler)
+Dependency gio-2.0 found: YES 2.80.0 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 found: YES 2.80.0 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 found: YES 2.80.0 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency libgsf-1 found: YES 1.14.51 (cached)
+Configuring leconfig.py using configuration
+Configuring kraken-action-layout-editor using configuration
+Dependency sqlite3 found: YES 3.45.1 (cached)
+
+../kraken-core/meson.build:9:2: ERROR: Unknown variable "kraken_lib_dep".
+
+A full log can be found at /home/rafael/.gemini/antigravity/scratch/nemo/build-kraken/meson-logs/meson-log.txt
+FAILED: build.ninja 
+/usr/bin/meson --internal regenerate /home/rafael/.gemini/antigravity/scratch/nemo .
+ninja: error: rebuilding 'build.ninja': subcommand failed

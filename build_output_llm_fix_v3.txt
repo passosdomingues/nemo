@@ -1,0 +1,4 @@
+ninja: Entering directory `build-kraken'
+[1/3] Compiling C object kraken-lib/libkraken-lib.a.p/kraken-llm.c.o
+[2/3] Linking static target kraken-lib/libkraken-lib.a
+[3/3] Linking target kraken-core/kraken-daemon
